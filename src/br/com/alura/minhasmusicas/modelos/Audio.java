@@ -4,10 +4,10 @@ public class Audio {
     private String titulo;
     private int totalDeReproducoes;
     private int totalDeCurtidas;
-    private double classificacao;
+    private int classificacao;
 
     public void curte(){
-        this.totalDeCurtidas ++;
+        this.totalDeCurtidas++;
     }
 
     public void reproduz(){
@@ -30,11 +30,8 @@ public class Audio {
         return totalDeCurtidas;
     }
 
-    public double getClassificacao() {
+    public int getClassificacao() {
         return classificacao;
     }
 
-    public void setClassificacao(double classificacao) {
-        this.classificacao = classificacao;
-    }
 }
